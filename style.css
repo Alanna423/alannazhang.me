@@ -3,34 +3,17 @@
 * {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
 }
 
 body {
     height:100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-body:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 50%;
-    background-image: url("piano.jpg");
-    background-size: cover;
-    background-position: top center;
+    background-color: bisque;
 }
 
 .container {
-    margin-top: 1%;
-    justify-content: center;
-    align-items: center;
+    margin-top: 3%;
     text-align: center;
     padding: 1vh;
 }
@@ -42,7 +25,7 @@ body:before {
     position:fixed;
     top: 0;
     left: 0;
-    right: inherit;
+    right: 0;
     background-color: burlywood;
     background-repeat: repeat-x;
     font-family: 'Archivo', sans-serif;
@@ -55,7 +38,7 @@ a {
 }
 
 .gallery {
-    padding: 10px;
+    padding: 50px;
     border: 3px solid black;
 }
 
