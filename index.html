@@ -11,25 +11,73 @@
 </head>
 
 <body>
-    <nav class="nav-bar">
-        <a href="#">Alanna Zhang</a>
-        <a href="/about.html">About</a>
-        <a href="/projects.html">Projects</a>
+    <nav>
+        <a href="./index.html">Alanna Zhang</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
     </nav>
-    <div class="container">
-        <h1>ALANNA ZHANG</h1>
-        <h3>Freshman CS Major at UNC Chapel Hill, Class of 2026</h3>
-        <section class="gallery">
-            <div class="photo">
-                <img src="alanna.jpg" width="200">
-                <p>This is a photo of me from very early on in the Fall 2022 semester.</p>
-            </div>
-        </section>
+    <div class="grid-container">
+        <!-- banner with background color -->
+        <header class="grid-item home-header">
+            <h1>ALANNA ZHANG</h1>
+        </header>
+        <!-- intro  -->
+        <div class="grid-item home-intro">
+            <h2>Freshman CS Major at UNC Chapel Hill, Class of 2026</h2>
+            <section class="gallery grid-item">
+                <div class="photo">
+                    <img src="alanna.jpg" width="200">
+                    <p>This is a photo of me from very early on in the Fall 2022 semester.</p>
+                </div>
+            </section>
+        </div>
+        <div class="section-border grid-item home-photo-gallery">
+            <section name="gallery" class="gallery grid-item">
+                <h3>Photo Gallery</h3>
+                <div class="photo">
+                    <img src="alanna.jpg" width="200">
+                    <img src="piano.jpg" width="200">
+                    <img src="anima.gif" width="200">
+                </div>
+            </section>
+        </div>
+        <div class="home-projects">
+            <h3>Project timeline here</h3>
+        </div>
+        <div class="grid-item home-projects home-projects-name">
+            <h4>Project #1</h4>
+            <p>3/14/2023</p>
+        </div>
+        <div class="grid-item home-projects home-projects-description">
+            <p>Celebrate Pi Day!</p>
+        </div>
+        <div class="grid-item home-projects home-projects-name">
+            <h4>Project #2</h4>
+            <p>1/1/2023</p>
+        </div>
+        <div class="grid-item home-projects home-projects-description">
+            <p>New Years</p>
+        </div>
+        <div class="grid-item home-projects home-projects-name">
+            <h4>Project #3</h4>
+            <p>##/##/####</p>
+        </div>
+        <div class="grid-item home-projects home-projects-description">
+            <p>description</p>
+        </div>
+        <div class="grid-item home-projects home-projects-name">
+            <h4>Project #4</h4>
+            <p>##/##/####</p>
+        </div>
+        <div class="grid-item home-projects home-projects-description">
+            <p>temp</p>
+        </div>
     </div>
 </body>
 
 <footer>
-    <img src="anima.gif" height="200px" class="animation">
+    <p>Contact</p>
+    <!-- <img src="anima.gif" height="200px" class="animation"> -->
 </footer>
 
 </html>

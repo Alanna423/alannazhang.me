@@ -3,32 +3,106 @@
 * {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; /* temporary color setting  */
+}
+
+h2 {
+    font: 30px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font: 36px 'Archivo', sans-serif;
+}
+
+h4 {
+    font: 24px 'Archivo', sans-serif;
+}
+
+p {
+    font: 18px 'Archivo', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(255, 247, 238);
+    padding: 10px;
+    background-image: url(genshin-art.jpeg);
+}
+
+.grid-item {
+    background-color: rgba(16, 0, 118, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
 }
 
 body {
-    height:100vh;
-    display: flex;
     justify-content: center;
-    background-color: bisque;
+    background-color: antiquewhite;
 }
 
-.container {
-    margin-top: 3%;
+.section-border {
     text-align: center;
-    padding: 1vh;
 }
 
-.nav-bar {
+nav {
     margin: 0;
-    padding: 0;
-    padding: 1vh;
-    position:fixed;
+    padding: 10px;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     background-color: burlywood;
-    background-repeat: repeat-x;
     font-family: 'Archivo', sans-serif;
+    text-align: left;
+}
+
+
+.home-header {
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    text-align: center;
+}
+
+.home-intro {
+    grid-row: 2;
+    grid-column: 1 / span 4;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-photo-gallery {
+    grid-row: auto;
+    grid-column: 1 / span 4;
+}
+
+.home-projects {
+    grid-row: 4 / span 3;
+    grid-column: 1 / span 4;
+    text-align: center;
+    border-style: hidden;
+    background-color: rgba(6, 0, 47, 0.8);
+    color: antiquewhite;
+}
+
+.home-projects-name {
+    grid-row: auto;
+    grid-column: 1;
+    font-weight: bold;
+    border: 3px;
+    border-right-width: 1px;
+    border-right-color: antiquewhite;
+}
+
+.home-projects-description {
+    grid-row: auto;
+    grid-column: 2 / span 3;
+}
+
+.next-row {
+    grid-row: inherit;
 }
 
 a {

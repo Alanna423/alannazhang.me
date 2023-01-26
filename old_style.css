@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap");
+
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 247, 238);
+}
+
+.section-border {
+    padding: 1vh;
+    text-align: center;
+    position: relative;
+    /* border: 1px solid rgb(5, 0, 31); */
+}
+
+.nav-bar {
+    margin: 0;
+    padding: 0;
+    padding: 1vh;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: burlywood;
+    background-repeat: repeat-x;
+    font-family: 'Archivo', sans-serif;
+}
+
+a {
+    margin: 10px;
+    text-align: center;
+    color: black;
+}
+
+.gallery {
+    padding: 50px;
+    border: 3px solid black;
+}
+
+img.animation {
+    position: fixed;
+    bottom: -100px;
+    left: 20px;
+    border: 1px solid black;
+}
