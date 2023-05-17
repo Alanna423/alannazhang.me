@@ -1,124 +1,187 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maitree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive_Mono&display=swap');
+
+/* 
+color scheme:
+- (penn blue-background) 6, 0, 47
+- (wisteria-box 1) 179, 155, 237
+- (pale dogwood-box 2) 227, 181, 164
+- (cornsilk-font 1) 248, 242, 216
+- (ebony-font 2) 99, 107, 97 - duller version of moss, really neutral
+- (dark moss green-accents 1) 99, 107, 30 - fits well with background
+- (burnt-sienna-accents 2) 239, 119, 75 - close to pale dogwood
+*/
 
 * {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white; /* temporary color setting  */
+    padding: 0;
+    color: rgb(99, 107, 30);
+    font-family: 'Kanit', sans-serif;
+    /* temporary color setting  */
+}
+
+a {
+    padding: 0 7px 0;
+}
+
+h1 {
+    font-size: 60px;
 }
 
 h2 {
-    font: 30px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(248, 242, 216);
+    font-size: 36px;
 }
 
 h3 {
-    font: 36px 'Archivo', sans-serif;
+    font-size: 20px;
 }
 
+/* actually just subtitle */
 h4 {
-    font: 24px 'Archivo', sans-serif;
+    /* font-family: 'Paprika', sans-serif;
+    font-size: 30px; */
+    font: 22px 'Paprika', sans-serif;
 }
 
 p {
-    font: 18px 'Archivo', sans-serif;
+    font: 18px 'Maitree', sans-serif;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: rgb(255, 247, 238);
-    padding: 10px;
-    background-image: url(genshin-art.jpeg);
-}
-
-.grid-item {
-    background-color: rgba(16, 0, 118, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-}
-
-body {
-    justify-content: center;
+figcaption {
+    font: 18px 'Cutive Mono', monospace;
+    color:rgba(6, 0, 47, 0.8);
     background-color: antiquewhite;
 }
 
-.section-border {
+figcaption:hover {
+    opacity: 30%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* background: rgba(6, 0, 47, 1); */
+}
+
+.alt-container {
+    display: flex;
+    flex-direction: row;
+    /* background: rgba(6, 0, 47, 1); */
+}
+
+.item {
+    background: rgba(179, 155, 237, 0.8);
+    padding: 20px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.item-alt {
+    background: rgba(227, 181, 164, 0.8);
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.item-alt-2 {
+    background: rgba(6, 0, 47, 0.8);
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+body {
+    margin: 0 10px 0 10px;
+    justify-content: center;
+    width:inherit;
+    background-color: antiquewhite;
+    background-image: url(img/valley.jpeg);
+    background-size: cover;
 }
 
 nav {
-    margin: 0;
     padding: 10px;
     position: relative;
     top: 0;
     left: 0;
     right: 0;
     background-color: burlywood;
-    font-family: 'Archivo', sans-serif;
-    text-align: left;
-}
-
-
-.home-header {
-    grid-row: 1;
-    grid-column: 1 / span 4;
     text-align: center;
 }
 
-.home-intro {
-    grid-row: 2;
-    grid-column: 1 / span 4;
+section {
+    margin: 10px 0 10px 0;
+}
+
+#top {
+    height: 60vh;
+}
+
+.small-box {
+    width: 50%;
+}
+
+.swiper {
+    height: 50vh;
+    width: 50vh;
+}
+
+.swiper-slide {
+    display:flex;
     justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width:100%;
+    height:100%;
+    object-fit: scale-down; /* https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
+}
+
+.swiper-slide figcaption {
+    position: absolute;
+    bottom: 30px;
     text-align: center;
-}
-
-.home-photo-gallery {
-    grid-row: auto;
-    grid-column: 1 / span 4;
-}
-
-.home-projects {
-    grid-row: 4 / span 3;
-    grid-column: 1 / span 4;
-    text-align: center;
-    border-style: hidden;
-    background-color: rgba(6, 0, 47, 0.8);
-    color: antiquewhite;
-}
-
-.home-projects-name {
-    grid-row: auto;
-    grid-column: 1;
-    font-weight: bold;
-    border: 3px;
-    border-right-width: 1px;
-    border-right-color: antiquewhite;
-}
-
-.home-projects-description {
-    grid-row: auto;
-    grid-column: 2 / span 3;
-}
-
-.next-row {
-    grid-row: inherit;
-}
-
-a {
-    margin: 10px;
-    text-align: center;
-    color: black;
+    left: 25%;
+    width: 70%;
 }
 
 .gallery {
     padding: 50px;
-    border: 3px solid black;
 }
 
-img.animation {
-    position: fixed;
-    bottom: -100px;
-    left: 20px;
-    border: 1px solid black;
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: burlywood;
+}
+
+
+
+/* off-screen width error */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.updates {
+    animation-name: scroll;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
 }
