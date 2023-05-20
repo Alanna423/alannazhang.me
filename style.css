@@ -3,56 +3,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Maitree&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive_Mono&display=swap');
 
-/* 
-color scheme:
-- (penn blue-background) 6, 0, 47
-- (wisteria-box 1) 179, 155, 237
-- (pale dogwood-box 2) 227, 181, 164
-- (cornsilk-font 1) 248, 242, 216
-- (ebony-font 2) 99, 107, 97 - duller version of moss, really neutral
-- (dark moss green-accents 1) 99, 107, 30 - fits well with background
-- (burnt-sienna-accents 2) 239, 119, 75 - close to pale dogwood
-*/
+:root {
+    --main-back: rgb(0,39,123);
+    --main-text: rgb(254,255,240);
+    --alt-back: rgb(223, 223, 223);
+    --alt-text: rgb(0, 24, 75);
+    --highlight-1: rgb(164,0,0);
+    --highlight-2: rgb(255,123,8);
+    --highlight-3: rgb(0,173,208);
+}
 
 * {
-    padding: 0;
-    color: rgb(99, 107, 30);
     font-family: 'Kanit', sans-serif;
-    /* temporary color setting  */
+    overflow-wrap: break-word;
 }
 
 a {
-    padding: 0 7px 0;
+    margin: 0 7px 0;
+    color: var(--main-text);
+    background-color: rgba(0,173,208, 0.8);
 }
 
 h1 {
     font-size: 60px;
+    color: var(--main-text);
+    background-image: linear-gradient(to right, rgba(255,123,8,1), rgba(0,173,208,1));
 }
 
 h2 {
-    color: rgb(248, 242, 216);
     font-size: 36px;
+    text-decoration: underline;
+    text-decoration-color: var(--highlight-2);
 }
 
 h3 {
     font-size: 20px;
+    background-color: rgba(0,173,208, 0.8);
 }
 
 /* actually just subtitle */
 h4 {
-    /* font-family: 'Paprika', sans-serif;
-    font-size: 30px; */
     font: 22px 'Paprika', sans-serif;
+    text-decoration: underline;
+    
 }
 
 p {
     font: 18px 'Maitree', sans-serif;
 }
 
+.regular-text {
+    text-align: left;
+}
+
 figcaption {
     font: 18px 'Cutive Mono', monospace;
-    color:rgba(6, 0, 47, 0.8);
-    background-color: antiquewhite;
 }
 
 figcaption:hover {
@@ -62,63 +67,55 @@ figcaption:hover {
 .container {
     display: flex;
     flex-direction: column;
-    /* background: rgba(6, 0, 47, 1); */
 }
 
 .alt-container {
     display: flex;
     flex-direction: row;
-    /* background: rgba(6, 0, 47, 1); */
 }
 
 .item {
-    background: rgba(179, 155, 237, 0.8);
+    background: var(--main-back);
+    color: var(--main-text);
     padding: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    flex-basis: 0;
+    flex: 1 1 0px;
 }
 
 .item-alt {
-    background: rgba(227, 181, 164, 0.8);
+    background: var(--alt-back);
+    color: var(--alt-text);
     padding: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
-}
-
-.item-alt-2 {
-    background: rgba(6, 0, 47, 0.8);
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+    flex-basis: 0;
+    flex: 1 1 0px;
 }
 
 body {
-    margin: 0 10px 0 10px;
     justify-content: center;
-    width:inherit;
-    background-color: antiquewhite;
+    color: var(--main-text);
+    background-color: var(--main-back);
+    /* 
+    maybe a background image later; keep it simple
     background-image: url(img/valley.jpeg);
-    background-size: cover;
+    background-size: cover; */
 }
 
 nav {
     padding: 10px;
-    position: relative;
+    position: sticky;
+    color: var(--main-text);
+    background-image: linear-gradient(0.25turn, rgba(0,39,123,0.25), rgba(0,39,123,1), rgba(0,39,123,0.25));
     top: 0;
     left: 0;
     right: 0;
-    background-color: burlywood;
     text-align: center;
-}
-
-section {
-    margin: 10px 0 10px 0;
+    z-index: 2; /* to ensure it comes on top of Slider*/
 }
 
 #top {
@@ -127,6 +124,23 @@ section {
 
 .small-box {
     width: 50%;
+}
+
+.border-1 {
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow:
+    0 0 0 5px var(--highlight-1),
+    0 0 0 6px var(--alt-back),
+    0 0 0 8px var(--highlight-1);
+}
+
+.border-2 {
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow:
+    0 0 0 5px var(--main-back),
+    0 0 0 8px var(--highlight-3);
 }
 
 .swiper {
@@ -153,10 +167,15 @@ section {
     text-align: center;
     left: 25%;
     width: 70%;
+    background-color: var(--highlight-3);
 }
 
 .gallery {
     padding: 50px;
+}
+
+.project-name {
+    width: 50%;
 }
 
 footer {
@@ -165,7 +184,8 @@ footer {
     left: 0;
     right: 0;
     padding: 10px;
-    background-color: burlywood;
+    color: var(--alt-text);
+    background-color: var(--alt-back);
 }
 
 

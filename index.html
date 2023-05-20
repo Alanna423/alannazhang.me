@@ -9,11 +9,12 @@
     <title>Alanna Zhang's Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="icon" href="img/icon.png">
 </head>
 
 <body>
     <nav>
-        <a href="#top">Alanna Zhang</a>
+        <a href="#top"><img src="img/icon.png" style="width: 30px"></a>
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#projects">Projects</a>
@@ -21,7 +22,7 @@
         <a href="#contact">Contact Me</a>
     </nav>
     <div>
-        <h4 class="updates">Website updates, fixes, and changes are in progress--thanks for your understanding!</h4>
+        <!-- <h4 class="updates">Website updates, fixes, and changes are in progress--thanks for your understanding!</h4> -->
     </div>
     <div class="container">
 
@@ -45,7 +46,7 @@
                         </div>
                         <div class="swiper-slide">
                             <figure>
-                                <img src="img/pearlhacks.jpeg">
+                                <a href="#projects"><img src="img/pearlhacks.jpeg"></a>
                                 <figcaption>PearlHacks 2023 Demo Showcase</figcaption>
                             </figure>
                         </div>
@@ -80,27 +81,47 @@
 
         <!-- intro  -->
         <!-- container centering abuse -->
-        <section id="about" class="item-alt container">
+        <section id="about" class="item-alt container border-1">
             <h2>About Me</h2>
-            <p class="small-box">Hello, I am an undergraduate Computer Science B.S. student at the University of North Carolina @ Chapel Hill. 
+            <p class="small-box">Hello! I am an undergraduate Computer Science B.S. student at the University of North Carolina @ Chapel Hill. 
                 My passion lies in creating solutions via hands-on work and puzzling over problems late into the night with orchestra music playing.
                 <br><br>
                 A high school web development competition is what sparked my interest in programming past the classroom environment, 
                 and is also the beginning of my love for extended team projects.
                 <br><br>
-                Currently, I am exploring different applications of computer science to find my niche. Outside of work, I enjoy
+                Currently, I am exploring different applications of computer science to find my niche. Outside of work and study, I enjoy
                 playing violin with the university orchestra, hiking with friends and family, and solving all manner of puzzles.
             </p>
         </section>
 
         <section id="work">
-            <!-- skills and education -->
-            <div class="item-alt-2">
-                <p>in progress education box</p>
-            </div>
-
-            <div class="item-alt-2">
-                <p>in progress skill overview</p>
+            <div class="alt-container">
+                <div class="item-alt border-1">
+                    <h2>Education</h2>
+                    <p class="regular-text">
+                        ► <b>University of North Carolina at Chapel Hill - 2022 to Present</b>
+                        <br>
+                        &emsp; Studying...
+                        <br>
+                        &emsp; &emsp; Majors: Computer Science (B.S.), Statistics and Analytics (B.S.)
+                        <br>
+                        &emsp; &emsp; Possible Minor: Music
+                        <br>
+                        <br>
+                        ► <b>Solon High School - 2018 to 2022</b>
+                    </p>
+                </div>
+                <div class="item-alt border-1">
+                    <h2>Work Experience</h2>
+                    <p class="regular-text">
+                        ► <b>Undergraduate Learning Assistant - Spring 2023 to Present</b>
+                        <br>
+                        &ensp; <i>UNC-Chapel Hill: Department of Computer Science</i>
+                        <br>
+                        &emsp; ULA for COMP 283 (Discrete Structures). Explained discrete math concepts during class and weekly office hours,
+                        helped students through assignments, and worked with the professor and ULA team to grade 120+ students' work.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -109,48 +130,70 @@
                 <h2>Projects</h2>
             </div>
              <!-- project overview -->
-        <div class="alt-container">
-            <div class="container">
-                <div class="item project-name">
-                    <h3>Aimo! - <i>2023 Microsoft Imagine Cup</i></h3>
-                    <p>2022-2023</p>
-                </div>
-                <div class="item-alt project-name">
-                    <h3>Memorabilia - 14th Annual RITE CoolTech Challenge</h3>
-                    <p>2022</p>
-                </div>
-                <div class="item project-name">
-                    <h3>Bird Buddies - 13th Annual RITE CoolTech Challenge</h3>
-                    <p>2021</p>
-                </div>
-                <div class="item-alt project-name">
-                    <h3>Purrfect Budget - PearlHacks 2023</h3>
-                    <p>2023</p>
-                </div>
+        <div class="alt-container border-2">
+            <div class="item">
+                <h3><a href="https://github.com/Alanna423/Aimo">Aimo!</a> - <i>2023 Microsoft Imagine Cup</i></h3>
+                <p>2022-2023</p>
             </div>
-            <div class="container">
-                <div class="item project-description">
-                    <p>A project to increase connectivity within a community built using the ASP.NET Core MVC framework.</p>
-                </div>
-                <div class="item-alt project-description">
-                    <p>Digital scrapbooking/journaling with a dual purpose of sharing memories with older family members.</p>
-                </div>
-                <div class="item project-description">
-                    <p>A hub for scheduling peer-tutoring sessions during virtual school. My first foray into project-based CS.</p>
-                </div>
-                <div class="item-alt project-description">
-                    <p>Budgeting app and calculator for the college student. A fun 24 hour build with simple HTML, CSS, and JS.</p>
-                </div>
+            <div class="item">
+                <p>A webapp to increase connectivity within a community and provide volunteer opportunities. 
+                    Community members, local organizations, and businesses are able to post help requests to a 
+                    shared task board and also accept requests to help neighbors out.
+                    <br>
+                    Built using the ASP.NET Core (MVC) framework, temporarily deployed to Azure Web App Services, 
+                    and designed in Figma.</p>
+            </div>
+        </div>
+        <div class="alt-container border-1">
+            <div class="item-alt">
+                <h3>Memorabilia - <i>14th Annual RITE CoolTech Challenge</i></h3>
+                <p>2022</p>
+            </div>
+            <div class="item-alt">
+                <p>An Android app for digital scrapbooking or journaling with a dual purpose of sharing memories with older family members
+                    that may live in separate locations. 
+                    <br>
+                    Programmed with Java and XML markup in Android Studio and demoed at CoolTech's showcase and award ceremony.
+                    <br>
+                    Won 4th place in App Design and Build category.
+                </p>
+            </div>
+        </div>
+        <div class="alt-container border-2">
+            <div class="item">
+                <h3>Bird Buddies - <i>13th Annual RITE CoolTech Challenge</i></h3>
+                <p>2021</p>
+            </div>
+            <div class="item">
+                <p>A hub for scheduling peer-tutoring sessions during virtual school. 
+                    <br>
+                    Organized code with team members 
+                    on the collaborative coding platform, Repl.it and programmed backend sorting and data storage
+                    features in Java using the Eclipse IDE.
+                    <br>
+                    Fun fact: this four month long competition was my first foray into project-based CS 
+                    and likely played a role in my decision to pursue CS.</p>
+            </div>
+        </div>
+        <div class="alt-container border-1">
+            <div class="item-alt">
+                <h3><a href="https://github.com/Alanna423/Purrfect-Budget">Purrfect Budget</a> - <i>PearlHacks 2023</i></h3>
+                <p>2023</p>
+            </div>
+            <div class="item-alt">
+                <p>A budgeting app and finance calculator for the college student. 
+                    <br>
+                    A fun 24 hour build with friends in simple HTML, CSS, and JS, using GitHub for version control.</p>
             </div>
         </div>
         </section>
 
         <footer>
-            <h3 id="contact">Contact</h3>
+            <h3 id="contact" style="background-color: rgb(223, 223, 223)">Contact</h3>
             <p>
                 Email: alanna26@unc.edu
                 <br>
-                Phone: (###)###-####
+                LinkedIn: <a href="https://www.linkedin.com/in/alanna-m-zhang/" style="background-color: rgb(223, 223, 223)"><img src="img/LI-In-Bug.png" style="width: 30px"></a>
             </p>
         </footer>
     </div>
