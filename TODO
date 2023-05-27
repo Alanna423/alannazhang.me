@@ -1,0 +1,30 @@
+1/26
+- get a structure for projects, preferably with a header
+
+1/27
+- sliding photo gallery (research) ✅
+- header/intro text and border
+
+1/2
+- content
+- contact bar
+- how to add backgrounds that are formatted in the right place (the corporate style)
+- vector art and maybe a background design
+
+2/20
+- content and formatting
+
+index.html
+- make sections: navbar; banner with name; profile photo with quote; photo gallery; skills bar; education; projects; contact me & footer
+
+style.css
+- make theme from scratch or use online?
+- draw background banner
+
+5/17
+- Fix slider issue for mobile view; plus other text/view problems on small screen (caption larger than slider area, inconsistent width)
+- Add content
+
+5/19
+- Mobile compatability
+- Revise content (1. roles in college, 2. project links, 3. resume, 4. MOAR PICTURES)

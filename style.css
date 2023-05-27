@@ -38,10 +38,10 @@ h2 {
 
 h3 {
     font-size: 20px;
-    background-color: rgba(0,173,208, 0.8);
+    background-color: rgba(0,173,208, 1);
 }
 
-/* actually just subtitle */
+/* actually just for subtitles */
 h4 {
     font: 22px 'Paprika', sans-serif;
     text-decoration: underline;
@@ -101,6 +101,7 @@ figcaption:hover {
 }
 
 body {
+    min-width: 320px;
     justify-content: center;
     color: var(--main-text);
     background-color: var(--main-back);
@@ -116,9 +117,9 @@ nav {
     position: sticky;
     color: var(--main-text);
     background-image: linear-gradient(0.25turn, rgba(0,39,123,0.25), rgba(0,39,123,1), rgba(0,39,123,0.25));
+    text-align: center;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     text-align: center;
     z-index: 2; /* to ensure it comes on top of Slider*/
 }
@@ -129,6 +130,12 @@ nav {
 
 .small-box {
     width: 75%;
+    min-width: 250px;
+    max-width: 75%;
+    position: relative;
+    left: 12.5%;
+    right: 12.5%;
+    top: 0;
 }
 
 .border-1 {
